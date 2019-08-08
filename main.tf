@@ -4,4 +4,10 @@ resource "aws_vpc" "playground" {
     instance_tenancy = "default"
     enable_dns_support = "true"
     enable_dns_hostnames = "true"
+
+    tags = {
+	    Owner       = "user"
+	    Environment = "dev"
+	  }
+
 }
